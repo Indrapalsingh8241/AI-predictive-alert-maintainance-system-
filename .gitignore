@@ -1,0 +1,87 @@
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment Variables
+.env
+.env.local
+
+# Database
+*.db
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Model Files
+models/*.pkl
+models/*.joblib
+models/*.h5
+
+# Data Files
+data/*.csv
+data/*.xlsx
+data/*.parquet
+data/raw/
+data/processed/
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Build Files
+build/
+dist/
+*.egg-info/
+
+# Docker
+docker-compose.override.yml
+
+# Coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Temporary Files
+*.tmp
+*.bak
+
+# PostgreSQL Dumps
+*.sql
+
+# Secrets
+secrets.json
+credentials.json
+service_account.json
+
+# Streamlit Cache
+.streamlit/cache/
+
+# Generated Reports
+reports/
+exports/
+
+# Terraform (if added later)
+.terraform/
+
+# Local Configuration
+config/local.py
