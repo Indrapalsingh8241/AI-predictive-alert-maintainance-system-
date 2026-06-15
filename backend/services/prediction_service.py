@@ -1,8 +1,16 @@
 import joblib
 from backend.ai_explanation.app import generate_explanation
 
-import joblib
-model = joblib.load("/Users/indrapal/industrial_predictive_alert_system/backend/etl/model.pkl")
+import os
+
+MODEL_PATH = os.path.join(
+    os.path.dirname(__file__),
+    "..",
+    "etl",
+    "model.pkl"
+)
+
+model = joblib.load(MODEL_PATH)
 
 def predict_sensor(sensor):
     risk_score = (

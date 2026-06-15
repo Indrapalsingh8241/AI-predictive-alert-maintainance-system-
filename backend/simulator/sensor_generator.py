@@ -11,7 +11,10 @@ machine_status = {
 }
    
 while True:
-
+    if all(status == "STOPPED" for status in machine_status.values()):
+        print("\n===== ALL MACHINES STOPPED =====")
+        print(machine_status)
+        break
     temperature = round(random.uniform(90, 100), 2)
     pressure = round(random.uniform(10, 50), 2)
     vibration = round(random.uniform(0, 10), 2)
@@ -52,4 +55,4 @@ while True:
     machine_status[machine_id] = result["status"]
    
 
-    time.sleep(5)
+    time.sleep(0.01)
