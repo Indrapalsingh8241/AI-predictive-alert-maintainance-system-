@@ -1,87 +1,89 @@
-# Virtual Environment
-venv/
-env/
-.venv/
-
+# ==========================
 # Python
+# ==========================
 __pycache__/
 *.py[cod]
 *$py.class
+*.so
 
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+
+# ==========================
 # Environment Variables
+# ==========================
 .env
-.env.local
+.env.*
+!.env.example
 
-# Database
-*.db
-*.sqlite3
+# ==========================
+# IDE Files
+# ==========================
+.vscode/
+.idea/
+*.swp
+*.swo
 
+# ==========================
+# macOS
+# ==========================
+.DS_Store
+
+# ==========================
 # Logs
+# ==========================
 *.log
 logs/
 
-
+# ==========================
 # Streamlit
+# ==========================
 .streamlit/secrets.toml
 
-# Model Files
-models/*.pkl
-models/*.joblib
-models/*.h5
+# ==========================
+# Database Files
+# ==========================
+*.db
+*.sqlite
+*.sqlite3
 
-# Data Files
-data/*.csv
-data/*.xlsx
-data/*.parquet
-data/raw/
-data/processed/
+# ==========================
+# Airflow
+# ==========================
+airflow/logs/
+airflow/airflow.db
+airflow/airflow-webserver.pid
 
-# VS Code
-.vscode/
+# Astro Runtime Files
+.astro/
 
-# PyCharm
-.idea/
+# ==========================
+# Jupyter
+# ==========================
+.ipynb_checkpoints/
 
-# macOS
-.DS_Store
+# ==========================
+# ML Artifacts
+# ==========================
+*.pkl
+*.joblib
+*.h5
+*.onnx
 
-# Windows
-Thumbs.db
+# ==========================
+# Temporary Files
+# ==========================
+tmp/
+temp/
+.cache/
 
+# ==========================
 # Build Files
+# ==========================
 build/
 dist/
 *.egg-info/
 
-# Docker
-docker-compose.override.yml
-
-# Coverage
-.coverage
-htmlcov/
-.pytest_cache/
-
-# Temporary Files
-*.tmp
-*.bak
-
-# PostgreSQL Dumps
-*.sql
-
-# Secrets
-secrets.json
-credentials.json
-service_account.json
-
-# Streamlit Cache
-.streamlit/cache/
-
-# Generated Reports
-reports/
-exports/
-
-# Terraform (if added later)
-.terraform/
-
-# Local Configuration
-config/local.py
