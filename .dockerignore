@@ -1,8 +1,8 @@
-astro
-.git
+venv/
+__pycache__/
+.git/
 .env
-airflow_settings.yaml
-logs/
-.venv
-airflow.db
-airflow.cfg
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+screenshots/
